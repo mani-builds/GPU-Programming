@@ -1,7 +1,19 @@
 * GPU related
-- (CheatSheet) High level overview of GPU glossary (hardware and software): https://modal.com/gpu-glossary
+- (CheatSheet) (Everything-related CUDA) High level overview of GPU glossary (hardware and software): https://modal.com/gpu-glossary
 
 * Inference Optimization
 - LLM Inference handbook (https://bentoml.com/llm/llm-inference-basics)
 - Attention mech. optimization (https://developer.nvidia.com/blog/mastering-llm-techniques-inference-optimization/)
 -
+
+* CuTeDSL 
+- Best intro blog on CuTe(https://veitner.bearblog.dev/bridging-math-and-code-cute-layout-algebra-in-cutedsl/), also checkout his other blogs for deepdive into CuTeDSL
+- Writing High-Performance GPU Kernels with CuTe DSL (https://docs.jax.dev/en/latest/notebooks/cute_dsl_jax.html#overview)
+- Tutorials ( https://github.com/NVIDIA/cutlass/tree/main/examples/python/CuTeDSL/cute/notebooks)
+
+* CUTLASS/CuTe
+- Best intro: Cris Cecka on GPUMode (https://www.youtube.com/watch?v=ufa4pmBOBT8)
+
+* Attention mechanism
+- Easy to understand intro ()
+- on QKV vectors (https://epichka.com/blog/2023/qkv-transformer/)
