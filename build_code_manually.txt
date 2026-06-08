@@ -1,0 +1,12 @@
+Create an object code (.o) from cuda source code:
+nvcc -Xcompiler -fPIC -I${PWD}/src -c src/mylib.cu -o mylib.o
+
+Create a shared object (.so) from an object code:
+nvcc -shared mylib.o -o libmylib.so (Note: it has to be named libNAME.so)
+
+Link the shared object (.so) when compiling source code (.cu):
+nvcc -I${PWD}/src -L. -lmylib main.cu -o main
+
+------
+Create a shared object (.so) from source code (.cu):
+nvcc -Xcompiler -fPIC -shared -I${PWD}/src -c src/mylib.cu -o libmylib.so

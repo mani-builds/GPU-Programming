@@ -12,8 +12,8 @@ MxK * KxN = MxN
 
 #define BLOCKSIZE 32
 
-__global__ void sgemm_naive(float *a, float *b, float *c, int M, int K, int N,
-                            int alpha, int beta) {
+__global__ void sgemm_shared_mem_block(int M, int N, int K, float alpha, float *a, float *b,  
+                            float beta, float *c) {
 
   // Map output data to thread idx
   int row = blockIdx.y * BLOCKSIZE + threadIdx.y;

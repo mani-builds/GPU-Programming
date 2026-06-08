@@ -3,8 +3,9 @@
 
 * Inference Optimization
 - LLM Inference handbook (https://bentoml.com/llm/llm-inference-basics)
-- Attention mech. optimization (https://developer.nvidia.com/blog/mastering-llm-techniques-inference-optimization/)
--
+- Inference optimization (https://developer.nvidia.com/blog/mastering-llm-techniques-inference-optimization/)
+- LLM Perf Study guide by Srinivas (Modular) (https://docs.google.com/document/d/1W7PfjvCdIhdphOmywEOp7RoRF9cfb-IQhtYvznrd9Bg/edit?tab=t.0#heading=h.r6evpnmucyqn)
+- LLM Engineers Handbook
 
 * CuTeDSL 
 - Best intro blog on CuTe(https://veitner.bearblog.dev/bridging-math-and-code-cute-layout-algebra-in-cutedsl/), also checkout his other blogs for deepdive into CuTeDSL
@@ -15,5 +16,5 @@
 - Best intro: Cris Cecka on GPUMode (https://www.youtube.com/watch?v=ufa4pmBOBT8)
 
 * Attention mechanism
-- Easy to understand intro ()
+- Easy to understand intro (https://jalammar.github.io/illustrated-transformer/)
 - on QKV vectors (https://epichka.com/blog/2023/qkv-transformer/)

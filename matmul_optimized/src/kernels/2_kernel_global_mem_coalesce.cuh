@@ -12,8 +12,8 @@ MxK * KxN = MxN
 
 #define BLOCK_SIZE 1024
 
-__global__ void sgemm_global_mem_coalesce(float *a, float *b, float *c, int M, int K, int N,
-                            int alpha, int beta) {
+__global__ void sgemm_global_mem_coalesce(int M, int N, int K, float alpha, float *a, float *b,  
+                            float beta, float *c) {
 
   // Map output data to thread idx
   // Select one row from A and all the cols 1-by-1 to exploit coalescing in same warp 
