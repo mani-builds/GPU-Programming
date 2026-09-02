@@ -1,5 +1,4 @@
-*.pdf
-Open_Source
+#*.pdf
 # Emacs / Magit auto-save and backup files
 /#*#*~
 /*/#*#*~
