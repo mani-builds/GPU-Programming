@@ -18,3 +18,15 @@
 * Attention mechanism
 - Easy to understand intro (https://jalammar.github.io/illustrated-transformer/)
 - on QKV vectors (https://epichka.com/blog/2023/qkv-transformer/)
+
+* Memory transfer
+- Overlap mem transfer in CUDA : https://developer.nvidia.com/blog/how-overlap-data-transfers-cuda-cc/
+
+* KV-cache
+- Intro and history: https://www.modular.com/blog/the-five-eras-of-kvcache
+
+* MoE kernels
+Intro - https://deepwiki.com/meta-pytorch/applied-ai/3-mixture-of-experts-(moe)-kernels
+
+* NCCL
+- Intro - GPU Mode lecture 17 https://www.youtube.com/watch?v=T22e3fgit-A

@@ -2,4 +2,5 @@
 Open_Source
 # Emacs / Magit auto-save and backup files
 /#*#*~
-/./#*#*~
+/*/#*#*~
+/*/*/#*#*~

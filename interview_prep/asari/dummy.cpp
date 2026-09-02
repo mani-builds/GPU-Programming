@@ -24,7 +24,7 @@ int main() {
     cout<<"Enter n: ";
     cin>>n;
     cout<<"n is: "<< n <<endl;
-    cout<<"typeinfo: "<< std::typeof(n) <<endl;
+    cout<<"typeinfo: "<< "a" * 2 <<endl;
 
     return 0;
 }

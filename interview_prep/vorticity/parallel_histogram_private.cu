@@ -4,7 +4,6 @@
 using namespace std;
 
 #define NUM_BINS 7
-#define BLOCK 128
 
 __global__ void parallel_hist(char *a, int *hist, int N) {
 
@@ -22,12 +21,9 @@ __global__ void parallel_hist(char *a, int *hist, int N) {
 
   // Histogram
   if (i < N){
-    // Coarsen
-    for(int c=i; c < N; c += blockDim.x * gridDim.x){
-        int alphabet_position = a[c] - 'a';
-        if (alphabet_position >=0 && alphabet_position < 26){
-            atomicAdd(&(hist_s[alphabet_position/4]), 1);
-        }
+    int alphabet_position = a[i] - 'a';
+    if (alphabet_position >=0 && alphabet_position < 26){
+        atomicAdd(&(hist_s[alphabet_position/4]), 1);
     }
   }
   __syncthreads();
@@ -66,9 +62,9 @@ int main() {
     // Copy input to device
     cudaMemcpy(a_d, a_h, sizeof(char) * N, cudaMemcpyHostToDevice);
 
-    // You do NOT need to launch 'N' threads since coarsening takes care of a grid
-    int threads = BLOCK;
-    int blocks = 32;
+    // Kernel launch
+    int threads = 32;
+    int blocks = (N + threads - 1) / threads;
     parallel_hist<<<blocks, threads>>>(a_d, hist_d, N);
 
     // Copy result back to host

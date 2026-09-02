@@ -51,7 +51,7 @@ int main() {
 
   cudaMalloc(&output, sizeof(float));
   int threads = BLOCK_DIM;
-  int blocks = 2;
+  int blocks = int((N + BLOCK_DIM -1)/BLOCK_DIM)/2/COARSE_FACTOR;
   printf("threads: %d, blocks: %d\n", threads, blocks);
   CoarsenedSumReductionKernel<<<blocks, threads>>>(input,output);
 
