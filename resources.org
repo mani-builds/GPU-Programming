@@ -1,8 +1,9 @@
 * GPU related
 - (CheatSheet) (Everything-related CUDA) High level overview of GPU glossary (hardware and software): https://modal.com/gpu-glossary
+- (Extremely good) (Everything-related to GPU architecure and memory): https://handbook.modular.com/kernel-optimization/gpu-architecture-fundamentals/
 
 * Inference Optimization
-- LLM Inference handbook (https://bentoml.com/llm/llm-inference-basics)
+- LLM Inference handbook (https://bentoml.com/llm/llm-inference-basics or https://handbook.modular.com/)
 - Inference optimization (https://developer.nvidia.com/blog/mastering-llm-techniques-inference-optimization/)
 - LLM Perf Study guide by Srinivas (Modular) (https://docs.google.com/document/d/1W7PfjvCdIhdphOmywEOp7RoRF9cfb-IQhtYvznrd9Bg/edit?tab=t.0#heading=h.r6evpnmucyqn)
 - LLM Engineers Handbook
@@ -18,6 +19,7 @@
 * Attention mechanism
 - Easy to understand intro (https://jalammar.github.io/illustrated-transformer/)
 - on QKV vectors (https://epichka.com/blog/2023/qkv-transformer/)
+- IIT (Spring 25) NLP Lecture PDFs
 
 * Memory transfer
 - Overlap mem transfer in CUDA : https://developer.nvidia.com/blog/how-overlap-data-transfers-cuda-cc/
@@ -30,3 +32,12 @@ Intro - https://deepwiki.com/meta-pytorch/applied-ai/3-mixture-of-experts-(moe)-
 
 * NCCL
 - Intro - GPU Mode lecture 17 https://www.youtube.com/watch?v=T22e3fgit-A
+
+* LLM Quantization
+- https://handbook.modular.com/model-preparation/llm-quantization/
+- Quantization concepts: https://huggingface.co/docs/transformers/main/en/quantization/concept_guide#quantization-concepts
+
+* Model Formats
+https://huggingface.co/blog/ngxson/common-ai-model-formats
+** GUFF
+- .GUFF explained + llama.cpp inference on it: https://zeroentropy.dev/concepts/gguf/
