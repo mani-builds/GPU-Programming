@@ -5,7 +5,7 @@
 __global__ void warp_reduce_kernel(float *in, float *out, int N) {
 
   // Map data to threads
-  int i = 2*blockIdx.x * blockIdx.x + threadIdx.x; // Skip each other block
+  int i = 2*blockIdx.x * blockDim.x + threadIdx.x; // Skip every other block
   // smem Memory layout
   __shared__ float in_s[32]; // Warp size // We only need 32 slots for partial warp sums
 

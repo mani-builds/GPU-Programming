@@ -41,3 +41,6 @@ Intro - https://deepwiki.com/meta-pytorch/applied-ai/3-mixture-of-experts-(moe)-
 https://huggingface.co/blog/ngxson/common-ai-model-formats
 ** GUFF
 - .GUFF explained + llama.cpp inference on it: https://zeroentropy.dev/concepts/gguf/
+
+* Performance Engineering of Software Systems (lectures)
+- https://ocw.mit.edu/courses/6-172-performance-engineering-of-software-systems-fall-2018/video_galleries/lecture-videos/
